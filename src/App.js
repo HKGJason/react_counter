@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Number from './components/Number.js';
 
 class App extends Component {
 	
@@ -13,8 +14,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button  onClick={this.updateNum}>Hello world!</button>
-		<span>number: {this.state.number}</span>
+        <button onClick={this.updateNum}>Hello world!</button>
+		<Number /><span>{this.state.number}</span>
 	  </div>
     );
   }
